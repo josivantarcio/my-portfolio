@@ -1,4 +1,4 @@
-# Josevan Oliveira - Portfolio
+# Josevan T. Oliveira - Portfolio
 
 A modern portfolio website built with React, Vite, and Tailwind CSS, featuring automatic GitHub repository integration.
 
