@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Portfolio",
+    "description": "Meu portfólio pessoal desenvolvido com React e Vite",
+    "repoUrl": "https://github.com/josivantarcio/my-portfolio",
+    "imagePath": "/assets/portfolio.jpg"
+  },
+  {
+    "name": "Projeto 1",
+    "description": "Descrição do projeto 1",
+    "repoUrl": "https://github.com/josivantarcio/projeto1",
+    "imagePath": "/assets/default-project.svg"
+  },
+  {
+    "name": "Projeto 2",
+    "description": "Descrição do projeto 2",
+    "repoUrl": "https://github.com/josivantarcio/projeto2",
+    "imagePath": "/assets/default-project.svg"
+  },
+  {
+    "name": "Projeto 3",
+    "description": "Descrição do projeto 3",
+    "repoUrl": "https://github.com/josivantarcio/projeto3",
+    "imagePath": "/assets/default-project.svg"
+  }
+] 
