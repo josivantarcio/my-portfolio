@@ -1,5 +1,7 @@
 # Josevan T. Oliveira - Portfolio
 
+[![Deploy Portfolio](https://github.com/josivantarcio/my-portfolio/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/josivantarcio/my-portfolio/actions/workflows/pages-deploy.yml)
+
 A modern portfolio website built with React, Vite, and Tailwind CSS, featuring automatic GitHub repository integration.
 
 ## Features
@@ -59,15 +61,38 @@ npm run dev
 
 6. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+## Testes
+
+Este projeto utiliza [Vitest](https://vitest.dev/) e [Testing Library](https://testing-library.com/) para testes automatizados.
+
+Para rodar os testes:
+```bash
+npm test
+```
+
+Para ver o relatório de cobertura:
+```bash
+npm run test:coverage
+```
+
+Os testes ficam em `src/components/__tests__/`.
+
+## CI/CD
+
+O projeto utiliza GitHub Actions para CI/CD:
+- **Testes**: Todo push e pull request na branch `main` executa os testes automatizados.
+- **Deploy**: O deploy para o GitHub Pages só ocorre se todos os testes passarem.
+- O status do workflow pode ser visto no badge acima ou na aba "Actions" do repositório.
+
 ## GitHub Integration
 
-The portfolio automatically fetches your 6 most recently updated GitHub repositories. Each repository card displays:
-- Repository name
-- Description
-- Primary programming language
-- Star count
-- Last update date
-- Link to repository
+O portfólio busca automaticamente seus 6 repositórios mais atualizados do GitHub. Cada card exibe:
+- Nome do repositório
+- Descrição
+- Linguagem principal
+- Estrelas
+- Data da última atualização
+- Link para o repositório
 
 ## Deployment on Vercel
 
