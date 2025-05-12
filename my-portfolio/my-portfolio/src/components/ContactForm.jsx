@@ -13,7 +13,7 @@ const ContactForm = () => {
     setStatus('submitting');
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xpwdyjgb', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-          Name
+          Nome
         </label>
         <input
           type="text"
@@ -73,7 +73,7 @@ const ContactForm = () => {
       </div>
       <div className="mb-4">
         <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-          Message
+          Mensagem
         </label>
         <textarea
           id="message"
@@ -95,18 +95,18 @@ const ContactForm = () => {
             : 'bg-blue-600 hover:bg-blue-700 text-white'
         }`}
       >
-        {status === 'submitting' ? 'Sending...' : 'Send Message'}
+        {status === 'submitting' ? 'Enviando...' : 'Enviar Mensagem'}
       </button>
 
       {status === 'success' && (
         <p className="mt-4 text-green-600 text-center">
-          Message sent successfully! I'll get back to you soon.
+          Mensagem enviada com sucesso! Entrarei em contato em breve.
         </p>
       )}
 
       {status === 'error' && (
         <p className="mt-4 text-red-600 text-center">
-          Oops! Something went wrong. Please try again later.
+          Ops! Algo deu errado. Por favor, tente novamente mais tarde.
         </p>
       )}
     </form>
