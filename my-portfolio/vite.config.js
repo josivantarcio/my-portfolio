@@ -14,5 +14,10 @@ export default defineConfig({
         manualChunks: undefined
       }
     }
+  },
+  server: {
+    port: 5173,
+    strictPort: true,
+    host: true
   }
 }) 
