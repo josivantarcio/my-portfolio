@@ -44,5 +44,8 @@
     "sending": "Enviando...",
     "success": "Sua mensagem foi enviada com sucesso! Entrarei em contato em breve.",
     "error": "Houve um erro ao enviar sua mensagem. Por favor, tente novamente."
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
   }
 } 

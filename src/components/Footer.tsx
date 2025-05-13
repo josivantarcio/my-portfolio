@@ -1,27 +1,30 @@
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
+  const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="bg-white shadow-lg mt-8">
-      <div className="container mx-auto px-4 py-6">
+    <footer className="bg-gray-900 text-white py-8">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-600">
-            © {new Date().getFullYear()} Josevan Oliveira. All rights reserved.
+          <div className="mb-4 md:mb-0">
+            <p>&copy; {currentYear} Josivan Tarcio. {t('footer.rights')}</p>
           </div>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex space-x-4">
             <a
               href="https://github.com/josivantarcio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="hover:text-gray-300 transition-colors"
             >
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/josevanoliveira/"
+              href="https://linkedin.com/in/josivantarcio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="hover:text-gray-300 transition-colors"
             >
               LinkedIn
             </a>
