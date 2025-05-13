@@ -7,33 +7,34 @@ A modern portfolio website built with React, Vite, and Tailwind CSS, featuring a
 - Responsive design with mobile-first approach
 - Automatic GitHub repository integration
 - Project showcase with Embla Carousel
-- Contact form integration with Formspree
+- Contact form integration
 - About page with bio and certifications
 - Social media links
 - Modern UI with Tailwind CSS
+- Bilingual support (English/Portuguese)
 
 ## Tech Stack
 
 - React 18
+- TypeScript
 - Vite
 - Tailwind CSS
 - Embla Carousel
 - GitHub API Integration
-- Formspree
+- i18next for internationalization
 
 ## Prerequisites
 
 - Node.js (v14 or higher)
 - npm (v6 or higher)
 - GitHub account
-- Formspree account
 
 ## Getting Started
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/josivantarcio/portfolio.git
-cd portfolio
+git clone https://github.com/josivantarcio/my-portfolio.git
+cd my-portfolio
 ```
 
 2. Install dependencies:
@@ -41,78 +42,37 @@ cd portfolio
 npm install
 ```
 
-3. Create a Formspree form:
-   - Go to [Formspree](https://formspree.io)
-   - Create a new form
-   - Copy the form ID
-   - Replace `YOUR_FORM_ID` in `src/components/ContactForm.jsx` with your form ID
-
-4. Add project images:
-   - Add images to `public/assets` directory
-   - Name them according to your repository names (lowercase, hyphens instead of spaces)
-   - Example: `workshop-springboot3-jpa.jpg`
-
-5. Start the development server:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-6. Open [http://localhost:5173](http://localhost:5173) in your browser.
+4. Open http://localhost:5173 in your browser.
 
-## Testes
+## Building for Production
 
-Este projeto utiliza [Vitest](https://vitest.dev/) e [Testing Library](https://testing-library.com/) para testes automatizados.
+To build the project for production:
 
-Para rodar os testes:
 ```bash
-npm test
+npm run build
 ```
 
-Para ver o relatório de cobertura:
-```bash
-npm run test:coverage
-```
+The built files will be in the `dist` directory.
 
-Os testes ficam em `src/components/__tests__/`.
+## Deployment
 
-## CI/CD
+The project is configured to deploy automatically to GitHub Pages using GitHub Actions. The workflow will:
 
-O projeto utiliza GitHub Actions para CI/CD:
-- **Testes**: Todo push e pull request na branch `main` executa os testes automatizados.
-- **Deploy**: O deploy para o GitHub Pages só ocorre se todos os testes passarem.
-- O status do workflow pode ser visto no badge acima ou na aba "Actions" do repositório.
-
-## GitHub Integration
-
-O portfólio busca automaticamente seus 6 repositórios mais atualizados do GitHub. Cada card exibe:
-- Nome do repositório
-- Descrição
-- Linguagem principal
-- Estrelas
-- Data da última atualização
-- Link para o repositório
-
-## Deployment on Vercel
-
-1. Push your code to GitHub:
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-2. Create a new project on Vercel:
-   - Go to [Vercel](https://vercel.com)
-   - Import your GitHub repository
-   - The build settings are pre-configured in `vercel.json`
-   - Deploy!
+1. Build the project
+2. Deploy to GitHub Pages
+3. Run on every push to the main branch
 
 ## Customization
 
-- Update personal information in `src/pages/About.jsx`
-- Modify social media links in `src/components/Footer.jsx`
+- Update personal information in `src/pages/About.tsx`
+- Modify social media links in `src/components/Footer.tsx`
 - Customize colors and styling in `tailwind.config.js`
-- Update GitHub username in `src/services/github.js`
+- Update GitHub username in `src/pages/Projects.tsx`
 
 ## License
 

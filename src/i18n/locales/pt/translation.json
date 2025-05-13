@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "home": {
+    "greeting": "Olá, eu sou",
+    "role": "Desenvolvedor Full Stack",
+    "description": "Eu construo aplicações web modernas com React, Node.js e TypeScript."
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Sou um Desenvolvedor Full Stack apaixonado com experiência em construir aplicações web modernas. Adoro trabalhar com React, Node.js e TypeScript para criar soluções eficientes e escaláveis.",
+    "skills": {
+      "title": "Habilidades",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Ferramentas"
+    },
+    "education": {
+      "title": "Educação",
+      "mba": "MBA em Engenharia de Software",
+      "university": "Universidade de São Paulo (USP)",
+      "expected": "Previsão de conclusão: Maio 2026",
+      "bachelor": "Bacharelado em Ciência da Computação",
+      "university2": "Universidade Tecnológica Federal do Paraná (UTFPR)",
+      "year": "2018-2022"
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "view": "Ver Projeto",
+    "description": "Aqui estão alguns dos meus projetos recentes. Cada projeto é uma peça única de desenvolvimento."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Tem uma pergunta ou quer trabalhar junto? Sinta-se à vontade para entrar em contato!",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar Mensagem",
+    "sending": "Enviando...",
+    "success": "Sua mensagem foi enviada com sucesso! Entrarei em contato em breve.",
+    "error": "Houve um erro ao enviar sua mensagem. Por favor, tente novamente."
+  }
+} 

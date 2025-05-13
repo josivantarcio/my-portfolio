@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "role": "Full Stack Developer",
+    "description": "I build modern web applications with React, Node.js, and TypeScript."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate Full Stack Developer with experience in building modern web applications. I love working with React, Node.js, and TypeScript to create efficient and scalable solutions.",
+    "skills": {
+      "title": "Skills",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    },
+    "education": {
+      "title": "Education",
+      "mba": "MBA in Software Engineering",
+      "university": "University of São Paulo (USP)",
+      "expected": "Expected completion: May 2026",
+      "bachelor": "Bachelor's Degree in Computer Science",
+      "university2": "Federal University of Technology - Paraná (UTFPR)",
+      "year": "2018-2022"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "view": "View Project",
+    "description": "Here are some of my recent projects. Each project is a unique piece of development."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Have a question or want to work together? Feel free to reach out!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully! I'll get back to you soon.",
+    "error": "There was an error sending your message. Please try again."
+  }
+} 

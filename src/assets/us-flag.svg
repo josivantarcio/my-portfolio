@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1235" height="650" viewBox="0 0 1235 650" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1235" height="650" fill="#bf0a30"/>
+  <rect width="1235" height="50" fill="#ffffff"/>
+  <rect y="100" width="1235" height="50" fill="#ffffff"/>
+  <rect y="200" width="1235" height="50" fill="#ffffff"/>
+  <rect y="300" width="1235" height="50" fill="#ffffff"/>
+  <rect y="400" width="1235" height="50" fill="#ffffff"/>
+  <rect y="500" width="1235" height="50" fill="#ffffff"/>
+  <rect y="600" width="1235" height="50" fill="#ffffff"/>
+  <rect width="494" height="350" fill="#002868"/>
+  <g fill="#ffffff">
+    <g id="s5">
+      <g id="s4">
+        <g id="s3">
+          <g id="s2">
+            <g id="s1">
+              <g id="s">
+                <polygon points="247,0 253.3,17.5 233.5,6.8 260.5,6.8 240.7,17.5"/>
+                <polygon points="247,70 253.3,87.5 233.5,76.8 260.5,76.8 240.7,87.5"/>
+                <polygon points="247,140 253.3,157.5 233.5,146.8 260.5,146.8 240.7,157.5"/>
+                <polygon points="247,210 253.3,227.5 233.5,216.8 260.5,216.8 240.7,227.5"/>
+                <polygon points="247,280 253.3,297.5 233.5,286.8 260.5,286.8 240.7,297.5"/>
+              </g>
+              <use transform="translate(0,35)" href="#s"/>
+            </g>
+            <use transform="translate(0,70)" href="#s1"/>
+          </g>
+          <use transform="translate(0,140)" href="#s2"/>
+        </g>
+        <use transform="translate(0,280)" href="#s3"/>
+      </g>
+      <use transform="translate(70,0)" href="#s4"/>
+    </g>
+    <use transform="translate(140,0)" href="#s5"/>
+  </g>
+</svg> 
