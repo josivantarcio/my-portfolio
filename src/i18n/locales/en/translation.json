@@ -8,7 +8,9 @@
   "home": {
     "greeting": "Hi, I'm",
     "role": "Full Stack Developer",
-    "description": "I build modern web applications with React, Node.js, and TypeScript."
+    "description": "I build modern web applications with React, Node.js, and TypeScript.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
   },
   "about": {
     "title": "About Me",

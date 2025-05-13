@@ -5,73 +5,30 @@ const Home = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="py-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Josevan Oliveira
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Junior Java Developer
-          </p>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="https://github.com/josivantarcio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/josevanoliveira/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              {t('about.title')}
-            </h2>
-            <p className="text-gray-600 mb-4">
-              {t('about.description')}
-            </p>
-            <Link
-              to="/about"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              {t('about.title')} →
-            </Link>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              {t('projects.title')}
-            </h2>
-            <p className="text-gray-600 mb-4">
-              Check out my latest projects and contributions on GitHub.
-            </p>
-            <Link
-              to="/projects"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              {t('projects.title')} →
-            </Link>
-          </div>
-        </div>
-
-        <div className="mt-8 text-center">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto text-center">
+        <h1 className="text-4xl sm:text-6xl font-extrabold text-white mb-6">
+          <span className="block">{t('home.greeting')}</span>
+          <span className="block text-indigo-400">Josivan Tarcio</span>
+        </h1>
+        <p className="text-xl sm:text-2xl text-gray-300 mb-8">
+          {t('home.role')}
+        </p>
+        <p className="text-lg text-gray-400 mb-12">
+          {t('home.description')}
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            to="/projects"
+            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors"
+          >
+            {t('home.viewProjects')}
+          </Link>
           <Link
             to="/contact"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 border border-indigo-600 text-base font-medium rounded-md text-indigo-400 bg-transparent hover:bg-indigo-600 hover:text-white transition-colors"
           >
-            {t('contact.title')}
+            {t('home.contactMe')}
           </Link>
         </div>
       </div>
