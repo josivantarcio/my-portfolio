@@ -34,7 +34,8 @@
   "projects": {
     "title": "Projetos",
     "view": "Ver Projeto",
-    "description": "Aqui estão alguns dos meus projetos recentes. Cada projeto é uma peça única de desenvolvimento."
+    "description": "Aqui estão alguns dos meus projetos recentes. Cada projeto é uma peça única de desenvolvimento.",
+    "learnMore": "Saiba mais..."
   },
   "contact": {
     "title": "Entre em Contato",
