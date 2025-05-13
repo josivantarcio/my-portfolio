@@ -6,16 +6,19 @@ export const fetchGitHubRepos = async () => {
     const repos = await response.json();
 
     // Filtra o repositório do portfólio e qualquer repositório Python
-    const filtered = repos.filter(repo => repo.name.toLowerCase() !== 'my-portfolio' && repo.language !== 'Python');
+    const filtered = repos.filter(repo => 
+      repo.name.toLowerCase() !== 'my-portfolio' && 
+      repo.language !== 'Python'
+    );
 
-    // Pega apenas os 5 primeiros (mais recentes, exceto o portfólio e Python)
-    return filtered.slice(0, 5).map(repo => ({
+    // Pega apenas os 3 primeiros (mais recentes, exceto o portfólio e Python)
+    return filtered.slice(0, 3).map(repo => ({
       name: repo.name,
       description: repo.description || 'Sem descrição',
       url: repo.html_url,
       language: repo.language || 'Não especificado',
       stars: repo.stargazers_count,
-      image: `/assets/${repo.name.toLowerCase().replace(/\s+/g, '-')}.jpg` || '/placeholder.png',
+      image: `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/main/preview.png`,
       lastUpdated: new Date(repo.updated_at).toLocaleDateString()
     }));
   } catch (error) {

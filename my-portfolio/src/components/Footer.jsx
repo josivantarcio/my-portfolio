@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-bold">Josevan Oliveira</h3>
-            <p className="text-gray-400">Desenvolvedor Full Stack</p>
+            <p className="text-gray-400">Junior Java Developer</p>
             <p className="text-gray-400 mt-2">
               <a href="mailto:josivantarcio@msn.com" className="hover:text-white">
                 josivantarcio@msn.com

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const About = () => {
   const certifications = [
     {
@@ -17,23 +19,58 @@ const About = () => {
     }
   ];
 
+  const technologies = [
+    { name: 'Java', icon: '☕' },
+    { name: 'Spring Boot', icon: '🌱' },
+    { name: 'React', icon: '⚛️' },
+    { name: 'JavaScript', icon: '📜' },
+    { name: 'HTML', icon: '🌐' },
+    { name: 'CSS', icon: '🎨' },
+    { name: 'Git', icon: '📦' },
+    { name: 'MySQL', icon: '🗄️' }
+  ];
+
   return (
     <div className="min-h-screen py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-          <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg">
-            <img
-              src="/assets/profile.jpg"
-              alt="Josevan Oliveira"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div>
-            <h1 className="text-4xl font-bold mb-4">Sobre Mim</h1>
-            <p className="text-gray-700 leading-relaxed">
-              Desenvolvedor Full Stack apaixonado por criar soluções inovadoras e escaláveis.
-              Especialista em Java, Spring Boot e desenvolvimento web moderno.
-            </p>
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="md:flex">
+            <div className="md:w-1/3">
+              <img
+                src="/assets/profile.jpg"
+                alt="Josevan Oliveira"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://via.placeholder.com/400x400?text=Josevan+Oliveira';
+                }}
+              />
+            </div>
+            <div className="md:w-2/3 p-8">
+              <h1 className="text-3xl font-bold mb-4">Sobre Mim</h1>
+              <p className="text-gray-600 mb-6">
+                Olá! Sou Josevan Oliveira, um desenvolvedor Java Junior apaixonado por criar soluções eficientes e escaláveis. 
+                Minha jornada na programação começou com Java e Spring Boot, e desde então tenho expandido minhas habilidades 
+                para incluir desenvolvimento web com React e outras tecnologias modernas.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente, 
+                aplicando as melhores práticas de desenvolvimento e contribuindo para projetos inovadores.
+              </p>
+              
+              <h2 className="text-2xl font-semibold mb-4">Tecnologias</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {technologies.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center space-x-2 bg-gray-50 p-3 rounded-lg"
+                  >
+                    <span className="text-xl">{tech.icon}</span>
+                    <span className="text-gray-700">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
         
