@@ -2,10 +2,14 @@ const GITHUB_USERNAME = 'josivantarcio';
 
 export const fetchGitHubRepos = async () => {
   try {
-    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=3`);
+    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`);
     const repos = await response.json();
 
-    return repos.map(repo => ({
+    // Filtra o repositório do portfólio
+    const filtered = repos.filter(repo => repo.name.toLowerCase() !== 'my-portfolio');
+
+    // Pega apenas os 5 primeiros (mais recentes, exceto o portfólio)
+    return filtered.slice(0, 5).map(repo => ({
       name: repo.name,
       description: repo.description || 'Sem descrição',
       url: repo.html_url,
@@ -18,4 +22,4 @@ export const fetchGitHubRepos = async () => {
     console.error('Error fetching GitHub repos:', error);
     return [];
   }
-}; 
+};
