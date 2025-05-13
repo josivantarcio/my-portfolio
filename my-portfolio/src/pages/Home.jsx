@@ -30,7 +30,8 @@ const Home = () => {
                 href={repo.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 h-full"
+                className="flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 h-full min-h-[340px]"
+                style={{ minHeight: 340 }}
               >
                 <img
                   src={repo.image}
@@ -39,8 +40,8 @@ const Home = () => {
                   onError={(e) => (e.target.style.display = 'none')}
                 />
                 <h3 className="text-xl font-bold mb-2 text-blue-700">{repo.name}</h3>
-                <p className="text-gray-600 mb-2">{repo.description}</p>
-                <div className="flex items-center text-sm text-gray-500 space-x-4">
+                <p className="text-gray-600 mb-2 flex-grow">{repo.description}</p>
+                <div className="flex items-center text-sm text-gray-500 space-x-4 mt-auto">
                   <span>Linguagem: {repo.language}</span>
                   <span>⭐ {repo.stars}</span>
                 </div>

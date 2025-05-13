@@ -7,8 +7,8 @@ const Footer = () => {
             <h3 className="text-xl font-bold">Josevan Oliveira</h3>
             <p className="text-gray-400">Desenvolvedor Full Stack</p>
             <p className="text-gray-400 mt-2">
-              <a href="mailto:seu-email@exemplo.com" className="hover:text-white">
-                seu-email@exemplo.com
+              <a href="mailto:josivantarcio@msn.com" className="hover:text-white">
+                josivantarcio@msn.com
               </a>
             </p>
           </div>
@@ -25,7 +25,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/josivantarcio"
+              href="https://www.linkedin.com/in/josevanoliveira/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"

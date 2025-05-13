@@ -2,13 +2,13 @@ const GITHUB_USERNAME = 'josivantarcio';
 
 export const fetchGitHubRepos = async () => {
   try {
-    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`);
+    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=10`);
     const repos = await response.json();
 
-    // Filtra o repositório do portfólio
-    const filtered = repos.filter(repo => repo.name.toLowerCase() !== 'my-portfolio');
+    // Filtra o repositório do portfólio e qualquer repositório Python
+    const filtered = repos.filter(repo => repo.name.toLowerCase() !== 'my-portfolio' && repo.language !== 'Python');
 
-    // Pega apenas os 5 primeiros (mais recentes, exceto o portfólio)
+    // Pega apenas os 5 primeiros (mais recentes, exceto o portfólio e Python)
     return filtered.slice(0, 5).map(repo => ({
       name: repo.name,
       description: repo.description || 'Sem descrição',
