@@ -22,10 +22,10 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_cektj0w', // Service ID
+        'template_fpspr9w', // Template ID
         data,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'XN3FzPVmQF_uSrM1f' // Public Key
       )
       setFormStatus('success')
       form.reset()
@@ -92,7 +92,7 @@ const Contact = () => {
                     name="name"
                     id="name"
                     required
-                    className="block w-full rounded-md border-gray-700 bg-gray-800 text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block w-full rounded-md border-gray-700 bg-gray-800 text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-base py-3"
                   />
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                     name="email"
                     id="email"
                     required
-                    className="block w-full rounded-md border-gray-700 bg-gray-800 text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block w-full rounded-md border-gray-700 bg-gray-800 text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-base py-3"
                   />
                 </div>
               </div>

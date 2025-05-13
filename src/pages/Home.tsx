@@ -9,7 +9,7 @@ const Home = () => {
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl sm:text-6xl font-extrabold text-white mb-6">
           <span className="block">{t('home.greeting')}</span>
-          <span className="block text-indigo-400">Josivan Tarcio</span>
+          <span className="block text-indigo-400">Josevan Oliveira</span>
         </h1>
         <p className="text-xl sm:text-2xl text-gray-300 mb-8">
           {t('home.role')}

@@ -30,7 +30,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <section className="py-16 bg-gradient-to-br from-green-50 to-gray-50">
+    <section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">{t('projects.title')}</h2>
         
@@ -61,7 +61,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-800"
                     >
-                      {t('projects.viewMore')}
+                      {t('projects.view')}
                     </a>
                   </div>
                 </div>

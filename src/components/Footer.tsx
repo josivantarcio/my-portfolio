@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p>&copy; {currentYear} Josivan Tarcio. {t('footer.rights')}</p>
+            <p>&copy; {currentYear} Josevan Oliveira. {t('footer.rights')}</p>
           </div>
           <div className="flex space-x-4">
             <a
@@ -21,7 +21,7 @@ const Footer = () => {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/josivantarcio"
+              href="https://www.linkedin.com/in/josevanoliveira/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"

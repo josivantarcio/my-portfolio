@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import profileImg from '../assets/profile.jpg'
 
 const About = () => {
   const { t } = useTranslation()
@@ -18,9 +19,9 @@ const About = () => {
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="flex justify-center">
             <img
-              src="/assets/profile.jpg"
+              src={profileImg}
               alt="Profile"
-              className="rounded-lg shadow-xl w-[500px] h-[500px] object-cover"
+              className="rounded-lg shadow-xl w-[300px] h-[300px] object-cover"
             />
           </div>
 
@@ -46,6 +47,8 @@ const About = () => {
                     {t('about.skills.backend')}
                   </h4>
                   <ul className="text-gray-300 space-y-2">
+                    <li>Java</li>
+                    <li>Spring</li>
                     <li>Node.js</li>
                     <li>Express</li>
                     <li>PostgreSQL</li>

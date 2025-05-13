@@ -7,14 +7,14 @@
   },
   "home": {
     "greeting": "Hi, I'm",
-    "role": "Full Stack Developer",
-    "description": "I build modern web applications with React, Node.js, and TypeScript.",
+    "role": "Junior Java Developer",
+    "description": "I build modern web applications with Java and Spring.",
     "viewProjects": "View Projects",
     "contactMe": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "description": "I'm a passionate Full Stack Developer with experience in building modern web applications. I love working with React, Node.js, and TypeScript to create efficient and scalable solutions.",
+    "description": "I'm a passionate Junior Java Developer with experience building robust and scalable applications using Java and Spring.",
     "skills": {
       "title": "Skills",
       "frontend": "Frontend",
